@@ -51,32 +51,53 @@
       <br>
       <br>
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <button type="button" class="btn btn-warning btn-lg">Catalogo de productos</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-warning btn-lg">Catalogo de Vehiculos</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-warning btn-lg">Catalogo de proveedores</button>
-          </div>
-          
-        </div>
-        <!-- Force next columns to break to new line -->
-        <br>
-        <br>
-        <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-warning btn-lg">Catalogo de clientes</button>
+        
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-prod-catalog-tab" data-bs-toggle="pill" data-bs-target="#pills-prod-catalog" type="button" role="tab" aria-controls="pills-prod-catalog" aria-selected="true">Catalogo de productos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-vehicle-catalog-tab" data-bs-toggle="pill" data-bs-target="#pills-vehicle-catalog" type="button" role="tab" aria-controls="pills-vehicle-catalog" aria-selected="false">Catalogo de vehiculos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-provider-catalog-tab" data-bs-toggle="pill" data-bs-target="#pills-provider-catalog" type="button" role="tab" aria-controls="pills-provider-catalog" aria-selected="false">Catalogo de proveedores</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-client-catalog-tab" data-bs-toggle="pill" data-bs-target="#pills-client-catalog" type="button" role="tab" aria-controls="pills-client-catalog" aria-selected="false">Catalogo de clientes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-categories-tab" data-bs-toggle="pill" data-bs-target="#pills-categories" type="button" role="tab" aria-controls="pills-categories" aria-selected="false">Categorias</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-product-applications-tab" data-bs-toggle="pill" data-bs-target="#pills-product-applications" type="button" role="tab" aria-controls="pills-product-applications" aria-selected="false">Aplicaciones de producto</button>
+            </li>
+            <!-- !!!!!!!!!!!!!! The below is to disable a tab -->
+            <!--
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+            </li>
+            -->
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-prod-catalog" role="tabpanel" aria-labelledby="pills-prod-catalog-tab" tabindex="0">
+              
+              Catalogo de productos
+            
             </div>
-            <div class="col">
-              <button type="button" class="btn btn-warning btn-lg">Categorias           </button>
-            </div>   
-            <div class="col">
-                <button type="button" class="btn btn-warning btn-lg">Aplicaciones de producto</button>
-              </div>           
+            <div class="tab-pane fade" id="pills-vehicle-catalog" role="tabpanel" aria-labelledby="pills-vehicle-catalog-tab" tabindex="0">Catalogo de vehiculos</div>
+            <div class="tab-pane fade" id="pills-provider-catalog" role="tabpanel" aria-labelledby="pills-provider-catalog-tab" tabindex="0">Catalogo de proveedores</div>
+            <div class="tab-pane fade" id="pills-client-catalog" role="tabpanel" aria-labelledby="pills-client-catalog-tab" tabindex="0">Catalogo de clientes</div>
+            <div class="tab-pane fade" id="pills-categories" role="tabpanel" aria-labelledby="pills-categories-tab" tabindex="0">Categorias</div>
+            <div class="tab-pane fade" id="pills-product-applications" role="tabpanel" aria-labelledby="pills-product-applications-tab" tabindex="0">Aplicaciones de producto</div>
+            
+            <!--!!!! The below is for the hidden tab which is disabled -->
+            <!--
+            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">This is the disabled contant </div>
+            -->
           </div>
+
       </div>
 
       <!-- Footer -->
